@@ -1,0 +1,21 @@
+### CREATE USER###
+POST http://localhost:3000/user/usercreate
+Content-Type: application/json
+
+{
+        "username":"demo1",
+        "password":"demo2"
+}
+### UPDATE USER ###
+PUT http://localhost:3000/user/userupdate/1
+Content-Type: application/json
+ 
+ {
+         "username":"pongsatorn",
+         "password":"121231"
+ }
+### DELETE USER ###
+DELETE  http://localhost:3000/user/delete/1
+### SEARCH ###
+GET http://localchost:3000/user/user/1
+Content-Type: application/json
